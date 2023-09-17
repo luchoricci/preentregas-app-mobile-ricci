@@ -1,5 +1,11 @@
-import Home from "./src/screens/home";
+
+import { SafeAreaView } from "react-native";
+import Store from "./src/screens/Store/store";
 
 export default function App() {
-  return <Home />;
-}
+  return (
+  <SafeAreaView>
+<Store/>
+      </SafeAreaView>
+  )
+};
