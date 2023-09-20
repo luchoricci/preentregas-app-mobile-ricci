@@ -1,18 +1,22 @@
-import { View, Text, StyleSheet, Image, Pressable } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
-import { colors } from "../theme/colors";
 import { useWindowDimensions } from "react-native";
 import { Dimensions } from "react-native";
 import PIStyles from "./PIStyle";
 
-const ProductItem = ({ item, navigation }) => {
-  const { height, width } = useWindowDimensions();
+
+
+const ProductItem = ({ item, navigation}) => {
+  const { width } = useWindowDimensions();
 
   return (
     <View style={PIStyles.container}>
-      <Pressable onPress={() => navigation.navigate("productDetail")}>
+       <Pressable onPress={() => navigation.navigate("productdetail")}>
         <Text style={width < 300 ? PIStyles.textMin : PIStyles.text}>
-          {item.title}
+          {item.name}
+        </Text>
+        <Text style={width < 300 ? PIStyles.textMin : PIStyles.text}>
+         ${item.price}
         </Text>
       </Pressable>
 
@@ -20,7 +24,7 @@ const ProductItem = ({ item, navigation }) => {
         style={PIStyles.image}
         height={80}
         width={80}
-        source={{ uri: item.images[0] }}
+        source={{ uri: item.image }}
         resizeMode="cover"
       />
     </View>

@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../theme/colors";
 
 
 const SearchStyles = StyleSheet.create({
@@ -12,7 +13,7 @@ const SearchStyles = StyleSheet.create({
       width: "78%",
       borderWidth: 1,
       borderRadius: 8,
-      borderColor: colors.heavyBlue,
+      borderColor: colors.heavyred,
       padding: 10,
       fontSize: 20,
       marginRight: 15,

@@ -6,8 +6,8 @@ const HeaderStyles = StyleSheet.create({
     container: {
       height: 95,
       width: "100%",
-     display: "flex",
-     flexDirection:"row",
+
+
      
 
      
@@ -16,17 +16,22 @@ const HeaderStyles = StyleSheet.create({
 
     
     },
+    headerTextContainer:{
+alignSelf: "center"
+    },
 
     headerText: {
-      marginTop:35,
+      marginTop:30,
       fontSize: 35,
       color: colors.yellow,
-      marginLeft: 20,
+   
+      fontFamily: "Oswald",
+      justifyContent: "center"
+   
     
 
   
     
-      // fontFamily: "Dancing",
     },
     headerButtonContainer: {
       
@@ -35,16 +40,20 @@ const HeaderStyles = StyleSheet.create({
     },
     headerButton: {
  
-      backgroundColor: colors.heavyred,
+      backgroundColor: colors.red,
       marginTop: 50,
       borderRadius: 20,
       marginRight:60,
-      color: colors.yellow,
+     
       marginLeft: 10,
-
-      
+      width:45,
+      position:"absolute"
 
     },
+
+    headerButtonText:{
+      color: colors.yellow,
+    }
   });
 
 

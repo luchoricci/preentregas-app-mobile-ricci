@@ -13,15 +13,7 @@ const CTStyles = StyleSheet.create({
       margin: 5,
 
 
-
-
-
-
-
-
-
-
-    }
+    },
 
 
 

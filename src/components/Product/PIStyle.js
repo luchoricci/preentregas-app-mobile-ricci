@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../theme/colors";
 
 const PIStyles = StyleSheet.create({
     container: {
       marginHorizontal: 20,
       marginVertical: 10,
-      borderColor: colors.mediumBlue,
+      borderColor: colors.red,
       borderRadius: 10,
       borderWidth: 2,
       height: 100,

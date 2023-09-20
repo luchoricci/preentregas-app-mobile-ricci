@@ -1,11 +1,12 @@
-import { View, Text, TextInput, StyleSheet, Pressable } from "react-native";
+import { View, Text, TextInput, Pressable } from "react-native";
 import React, { useState } from "react";
-import { colors } from "../theme/colors";
 import { AntDesign } from "@expo/vector-icons";
 import SearchStyles from "./SearchStyle";
 
 
 const Search = ({ text, setText }) => {
+
+
   const clearText = () => {
     setText(null);
   };
@@ -16,7 +17,7 @@ const Search = ({ text, setText }) => {
         onChangeText={(value) => setText(value)}
         value={text}
         style={SearchStyles.input}
-        placeholder="Busca un producto aquí.."
+        placeholder="Search product"
       />
       <Pressable onPress={() => clearText()}>
         <AntDesign name="close" size={30} color="black" />

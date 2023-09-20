@@ -1,8 +1,8 @@
 export const CategoryList = [
-    "Cerveza",
+    "Beer",
 
 
-    "Licor",
+    "Licour",
 
 
     "Vodka",

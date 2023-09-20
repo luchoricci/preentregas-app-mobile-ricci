@@ -3,17 +3,18 @@ import React from "react";
 import HeaderStyles from "./HeaderStyle";
 
 
-const Header = ({ title }) => {
+const Header = ({ title, navigation }) => {
   return (
     <View style={HeaderStyles.container}>
-      <View>
-        <Pressable style={HeaderStyles.headerButton}>
-          <Text> Back </Text>
+      
+       
+      
+      <View style={HeaderStyles.headerTextContainer}>
+        <Text style={HeaderStyles.headerText}> {title} </Text>
+      </View>
+      <Pressable style={HeaderStyles.headerButton} onPress={() => navigation.goBack()}>
+          <Text style={HeaderStyles.headerButtonText}> Back </Text>
         </Pressable>
-      </View>
-      <View>
-        <Text style={HeaderStyles.headerText}> Header </Text>
-      </View>
     </View>
   );
 };
