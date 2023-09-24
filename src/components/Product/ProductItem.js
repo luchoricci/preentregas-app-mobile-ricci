@@ -11,7 +11,7 @@ const ProductItem = ({ item, navigation}) => {
 
   return (
     <View style={PIStyles.container}>
-       <Pressable onPress={() => navigation.navigate("productdetail")}>
+       <Pressable onPress={() => navigation.navigate("productdetail", {item: item })}>
         <Text style={width < 300 ? PIStyles.textMin : PIStyles.text}>
           {item.name}
         </Text>

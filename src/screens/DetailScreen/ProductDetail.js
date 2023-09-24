@@ -4,11 +4,11 @@ import PDStyles from './PDStyle'
 import { ProductsList } from '../../Data/ProductList'
 import Header from '../../components/Header/Header'
 
-const ProductDetail = ({route, navigation}) => {
+const ProductDetail = ({route,navigation}) => {
+   
     const { item } = route.params;
+    const initialProd = item
 
-    const initialProd = ProductsList[item]
-console.log(ProductsList)
 
     return (
         <View >

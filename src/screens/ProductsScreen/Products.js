@@ -11,8 +11,6 @@ import { Button } from 'react-native-web'
 const Products = ({route, navigation }) => {
 
 
-
-
     const [categoryProd, setCategoryProd] = useState([]);
     const [text, setText] = useState(null);
 
@@ -28,6 +26,8 @@ const Products = ({route, navigation }) => {
         }
       }, [text, item]);
 
+console.log(item)
+
 
 
     return (
@@ -38,10 +38,8 @@ const Products = ({route, navigation }) => {
             <FlatList
                 data={categoryProd}
                 keyExtractor={ProductsList.id}
-                renderItem={({ item = ProductsList.id }) => (
-                    <Pressable onPress={() => navigation.navigate("productdetail", {item})}>
-               <ProductItem  />
-               </Pressable>
+                renderItem={({ item }) => (
+                    <ProductItem navigation={navigation} item={item} />
                 )}
             />
 
@@ -49,5 +47,6 @@ const Products = ({route, navigation }) => {
         </SafeAreaView>
     )
 }
+
 
 export default Products
