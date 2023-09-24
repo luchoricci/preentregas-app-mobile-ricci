@@ -1,10 +1,10 @@
-import { View, Text, FlatList, SafeAreaView, Pressable} from 'react-native'
+import {FlatList, SafeAreaView} from 'react-native'
 import React, {useEffect, useState,} from 'react'
 import Header from '../../components/Header/Header'
 import Search from '../../components/Search/Search'
 import { ProductsList } from '../../Data/ProductList'
 import ProductItem from '../../components/Product/ProductItem'
-import { Button } from 'react-native-web'
+
 
 
 

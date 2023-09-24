@@ -10,15 +10,15 @@ const ProductItem = ({ item, navigation}) => {
   const { width } = useWindowDimensions();
 
   return (
-    <View style={PIStyles.container}>
-       <Pressable onPress={() => navigation.navigate("productdetail", {item: item })}>
+    <View >
+       <Pressable style={PIStyles.container} onPress={() => navigation.navigate("productdetail", {item: item })}>
         <Text style={width < 300 ? PIStyles.textMin : PIStyles.text}>
           {item.name}
         </Text>
         <Text style={width < 300 ? PIStyles.textMin : PIStyles.text}>
          ${item.price}
         </Text>
-      </Pressable>
+      
 
       <Image
         style={PIStyles.image}
@@ -27,6 +27,7 @@ const ProductItem = ({ item, navigation}) => {
         source={{ uri: item.image }}
         resizeMode="cover"
       />
+      </Pressable>
     </View>
   );
 };

@@ -1,7 +1,7 @@
 import { View, Text, Image, SafeAreaView, Pressable,Button } from 'react-native'
 import React from 'react'
 import PDStyles from './PDStyle'
-import { ProductsList } from '../../Data/ProductList'
+
 import Header from '../../components/Header/Header'
 
 const ProductDetail = ({route,navigation}) => {
