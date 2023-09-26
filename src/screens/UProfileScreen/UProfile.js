@@ -8,6 +8,12 @@ const UProfile = () => {
  <Header
  title={"Mi Perfil"} 
  />
+ <View>
+  <image
+  
+  />
+
+ </View>
     </View>
   )
 }
