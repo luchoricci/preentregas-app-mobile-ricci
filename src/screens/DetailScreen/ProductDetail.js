@@ -7,22 +7,22 @@ import Header from '../../components/Header/Header'
 const ProductDetail = ({route,navigation}) => {
    
     const { item } = route.params;
-    const initialProd = item
+    const ProdSelected = item
 
 
     return (
         <View >
             <Header title={"Detail"} navigation={navigation} />
             <View style={PDStyles.ProductContainer}>
-                <Text style={PDStyles.name}>{initialProd.name}</Text>
+                <Text style={PDStyles.name}>{ProdSelected.name}</Text>
                 <Image style={PDStyles.image}
                     source={{
-                        uri: initialProd.image,
+                        uri: ProdSelected.image,
                     }}
                 />
-                <Text style={PDStyles.description}>{initialProd.description}</Text>
-                <Text>Stock:{initialProd.stock}</Text>
-                <Text style={PDStyles.price}>${initialProd.price}</Text>
+                <Text style={PDStyles.description}>{ProdSelected.description}</Text>
+                <Text>Stock:{ProdSelected.stock}</Text>
+                <Text style={PDStyles.price}>${ProdSelected.price}</Text>
             </View>
             <Button
           color="red"

@@ -26,9 +26,6 @@ const Products = ({route, navigation }) => {
         }
       }, [text, item]);
 
-console.log(item)
-
-
 
     return (
         <SafeAreaView>

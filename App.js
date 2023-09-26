@@ -5,7 +5,8 @@ import Products from "./src/screens/ProductsScreen/Products";
 import {useFonts} from "expo-font"
 import ProductDetail from "./src/screens/DetailScreen/ProductDetail";
 import { NavigationContainer } from "@react-navigation/native";
-import RoutesNav from "./src/Routes/RoutesNav";
+import RoutesNav from "./src/Navigation/RoutesNav";
+import TabNav from "./src/Navigation/TabNav";
 
 
 export default function App() {
@@ -18,8 +19,7 @@ if (!fontsLoaded) {
 
   return (
   <NavigationContainer>
-
-<RoutesNav/>
+<TabNav />
 </NavigationContainer>
 
   )
