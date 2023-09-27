@@ -1,13 +1,15 @@
 import { View, Text, Image, SafeAreaView, Pressable,Button } from 'react-native'
 import React from 'react'
 import PDStyles from './PDStyle'
-
 import Header from '../../components/Header/Header'
+import { useSelector } from 'react-redux';
 
-const ProductDetail = ({route,navigation}) => {
-   
-    const { item } = route.params;
-    const ProdSelected = item
+const ProductDetail = ({navigation, route}) => {
+
+  
+    const ProdSelected = useSelector(
+        (state) => state.firstSlice.productSelected
+    );
 
 
     return (

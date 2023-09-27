@@ -12,8 +12,7 @@ const Stack = createNativeStackNavigator()
 const RoutesNav = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false, }}>
-      
-      <Stack.Screen component={Home} name="Home"/>
+      {/* <Stack.Screen component={Home} name="Home"/> */}
       <Stack.Screen component={Store} name="store"/>
       <Stack.Screen component={Products} name="products" />
       <Stack.Screen component={ProductDetail} name="productdetail" />

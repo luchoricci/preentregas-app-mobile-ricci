@@ -1,12 +1,13 @@
 import {View, FlatList} from "react-native";
-
 import Header from "../../components/Header/Header";
 import CategoryItem from "../../components/CategoryItem/CategoryItem";
-import {CategoryList} from "../../Data/CategoryList";
+import { useSelector } from "react-redux";
+
 
 
 const Store = ({navigation}) => {
 
+const CategoryList = useSelector(state=> state.firstSlice.allCategories)
 
   return (
     <View>

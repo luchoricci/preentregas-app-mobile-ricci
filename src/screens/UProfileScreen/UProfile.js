@@ -9,9 +9,7 @@ const UProfile = () => {
  title={"Mi Perfil"} 
  />
  <View>
-  <image
-  
-  />
+
 
  </View>
     </View>
